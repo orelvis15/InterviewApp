@@ -10,7 +10,6 @@ class RepositoryImpl @Inject constructor(private val api: Api) : Repository {
     override suspend fun getSimpsonCharacterList(): Response<Results> {
         return api.getSimpsonCharacters()
     }
-
     override suspend fun getWireCharacterList(): Response<Results> {
         return api.getWireCharacters()
     }

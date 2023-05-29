@@ -1,4 +1,4 @@
-package com.sample.networking.viewModels
+package com.sample.simpsonsviewer.views
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -12,7 +12,7 @@ import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 @HiltViewModel
-class MainViewModel @Inject constructor(private val repository: Repository) : ViewModel() {
+class MainViewModel @Inject constructor(private var repository: Repository) : ViewModel() {
 
     val errorMessage = MutableLiveData<String>()
     val characterList = MutableLiveData<Results>()
@@ -32,23 +32,8 @@ class MainViewModel @Inject constructor(private val repository: Repository) : Vi
         }
     }
 
-    fun getWireCharacterList() {
-        CoroutineScope(Dispatchers.IO).launch {
-            val response = repository.getWireCharacterList()
-            withContext(Dispatchers.Main) {
-                if (response.isSuccessful) {
-                    characterList.postValue(response.body())
-                    loading.value = false
-                } else {
-                    onError("Error : ${response.message()} ")
-                }
-            }
-        }
-    }
-
     private fun onError(message: String) {
         errorMessage.value = message
         loading.value = false
     }
-
 }

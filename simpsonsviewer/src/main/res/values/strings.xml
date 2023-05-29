@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">simpsonsviewer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Simpsons Viewer</string>
+    <string name="character_unselected">Select a character to show details</string>
+    <string name="details_title">Details</string>
 </resources>

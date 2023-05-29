@@ -1,4 +1,4 @@
-package com.sample.simpsonsviewer
+package com.sample.simpsonsviewer.adapters
 
 import android.content.Context
 import android.view.LayoutInflater

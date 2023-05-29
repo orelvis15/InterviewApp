@@ -11,7 +11,7 @@
         android:theme="@style/Theme.InterviewApp">
         <activity
             android:screenOrientation="fullSensor"
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:exported="true">
 
             <intent-filter>

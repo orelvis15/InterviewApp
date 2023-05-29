@@ -1,4 +1,4 @@
-package com.sample.wireviewer
+package com.sample.wireviewer.adapter
 
 import android.content.Context
 import android.view.LayoutInflater

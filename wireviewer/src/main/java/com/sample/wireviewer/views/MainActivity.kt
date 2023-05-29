@@ -1,4 +1,4 @@
-package com.sample.wireviewer
+package com.sample.wireviewer.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +8,8 @@ import androidx.activity.viewModels
 import androidx.appcompat.widget.SearchView
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.NavHostFragment
-import com.sample.networking.viewModels.MainViewModel
+import com.sample.wireviewer.R
+import com.sample.wireviewer.adapter.CharacterAdapter
 import com.sample.wireviewer.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 

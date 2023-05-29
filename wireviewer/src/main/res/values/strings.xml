@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">wireviewer</string>
+    <string name="app_name">Wire Viewer</string>
+    <string name="character_unselected">Select a character to show details</string>
+    <string name="details_title">Details</string>
 </resources>
